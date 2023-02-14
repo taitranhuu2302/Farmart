@@ -1,0 +1,111 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  justify-content: center;
+  gap: 10px;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 3px;
+  border: 1px solid;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn.btn--info {
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn.btn--info.btn-outline {
+  color: #007bff;
+  border-color: #007bff;
+  background-color: transparent;
+}
+.btn.btn--info.btn-outline:hover {
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+  opacity: 1;
+}
+.btn.btn--secondary {
+  color: white;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn.btn--secondary.btn-outline {
+  color: #6c757d;
+  border-color: #6c757d;
+  background-color: transparent;
+}
+.btn.btn--secondary.btn-outline:hover {
+  color: white;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  opacity: 1;
+}
+.btn.btn--success {
+  color: white;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn.btn--success.btn-outline {
+  color: #28a745;
+  border-color: #28a745;
+  background-color: transparent;
+}
+.btn.btn--success.btn-outline:hover {
+  color: white;
+  background-color: #28a745;
+  border-color: #28a745;
+  opacity: 1;
+}
+.btn.btn--danger {
+  color: white;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.btn.btn--danger.btn-outline {
+  color: #dc3545;
+  border-color: #dc3545;
+  background-color: transparent;
+}
+.btn.btn--danger.btn-outline:hover {
+  color: white;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  opacity: 1;
+}
+.btn.btn--warning {
+  color: white;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+.btn.btn--warning.btn-outline {
+  color: #ffc107;
+  border-color: #ffc107;
+  background-color: transparent;
+}
+.btn.btn--warning.btn-outline:hover {
+  color: white;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  opacity: 1;
+}
+.btn.btn--dark {
+  color: white;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+.btn.btn--dark.btn-outline {
+  color: #343a40;
+  border-color: #343a40;
+  background-color: transparent;
+}
+.btn.btn--dark.btn-outline:hover {
+  color: white;
+  background-color: #343a40;
+  border-color: #343a40;
+  opacity: 1;
+}/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,37 @@
+#Content #Product .star-active {
+  color: var(--color-yellow);
+}
+#Content #Product .list-share {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+#Content #Product .list-share .list-share-item {
+  font-size: 11px;
+  height: 14px;
+  padding: 4px 5px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 3px;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  transition: all 0.3s;
+}
+#Content #Product .list-share .list-share-item:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+#Content #Product .list-share .list-share-item.blue {
+  background-color: #4167b2;
+  color: white;
+}
+#Content #Product .list-share .list-share-item.blue-light {
+  background-color: #1a95e0;
+  color: white;
+}
+#Content #Product .list-share .list-share-item.red-light {
+  background-color: #ff6e4c;
+  color: white;
+}/*# sourceMappingURL=product-default.css.map */

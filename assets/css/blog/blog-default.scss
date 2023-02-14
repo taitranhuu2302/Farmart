@@ -1,0 +1,21 @@
+
+#Content {
+  .input-group {
+    .input-icon {
+      font-size: 15px;
+    }
+    .input-control {
+    }
+
+    ::placeholder {
+      font-size: 15px;
+      color: #a0a0a0;
+    }
+  }
+
+  .pagination {
+    .pagi-list {
+      justify-content: start;
+    }
+  }
+}

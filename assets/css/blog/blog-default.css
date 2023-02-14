@@ -1,0 +1,18 @@
+#Content .input-group .input-icon {
+  font-size: 15px;
+}
+#Content .input-group ::-moz-placeholder {
+  font-size: 15px;
+  color: #a0a0a0;
+}
+#Content .input-group :-ms-input-placeholder {
+  font-size: 15px;
+  color: #a0a0a0;
+}
+#Content .input-group ::placeholder {
+  font-size: 15px;
+  color: #a0a0a0;
+}
+#Content .pagination .pagi-list {
+  justify-content: start;
+}/*# sourceMappingURL=blog-default.css.map */

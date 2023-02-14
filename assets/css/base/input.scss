@@ -1,0 +1,70 @@
+$color--info: #007bff;
+$color--secondary: #6c757d;
+$color--success: #28a745;
+$color--warning: #ffc107;
+$color--danger: #dc3545;
+$color--dark: #343a40;
+
+.input-control {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+
+    ::placeholder {
+        color: #a0a0a0;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $color--info;
+    }
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+
+    .input-label {
+        font-size: 16px;
+        margin-left: 2px;
+    }
+
+    &.has-icon-left {
+        .input-control {
+            padding: 10px 10px 10px 45px;
+        }
+
+        .input-icon {
+            left: 15px;
+        }
+    }
+
+    &.has-icon-right {
+        .input-control {
+            padding: 10px 45px 10px 10px;
+        }
+
+        .input-icon {
+            right: 15px;
+        }
+    }
+
+    .input-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: #343a40;
+    }
+}
+
+select.input-control {
+    appearance: none;
+}
+
+textarea.input-control {
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,59 @@
+.input-control {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+}
+.input-control ::-moz-placeholder {
+  color: #a0a0a0;
+}
+.input-control :-ms-input-placeholder {
+  color: #a0a0a0;
+}
+.input-control ::placeholder {
+  color: #a0a0a0;
+}
+.input-control:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+.input-group .input-label {
+  font-size: 16px;
+  margin-left: 2px;
+}
+.input-group.has-icon-left .input-control {
+  padding: 10px 10px 10px 45px;
+}
+.input-group.has-icon-left .input-icon {
+  left: 15px;
+}
+.input-group.has-icon-right .input-control {
+  padding: 10px 45px 10px 10px;
+}
+.input-group.has-icon-right .input-icon {
+  right: 15px;
+}
+.input-group .input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #343a40;
+}
+
+select.input-control {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+textarea.input-control {
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=input.css.map */

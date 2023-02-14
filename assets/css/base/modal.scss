@@ -1,0 +1,133 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    &-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        max-width: 500px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .modal-header {
+            padding: 10px 20px;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .modal-title {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .modal-close {
+                cursor: pointer;
+                color: #000;
+                font-size: 26px;
+            }
+        }
+        .modal-body {
+            padding: 20px;
+            flex: 1 0 auto;
+        }
+        .modal-footer {
+            flex: 0 1 auto;
+            border-top: 1px solid #e5e5e5;
+            padding: 20px;
+        }
+    }
+}
+
+.drawer {
+    &.active {
+        .overlay {
+            display: block;
+        }
+
+        .drawer-content {
+            transform: translateX(0);
+            transition: all 0.3s;
+        }
+    }
+
+    &.drawer-right {
+        .drawer-content {
+            right: 0;
+            left: auto;
+            transform: translateX(100%);
+        }
+
+        &.active {
+            .drawer-content {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        display: none;
+    }
+
+    .drawer-content {
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        transition: all 0.3s;
+        transform: translateX(-100%);
+        background-color: white;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+
+        .drawer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            .drawer-title {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .drawer-close {
+                cursor: pointer;
+                color: #000;
+                font-size: 26px;
+            }
+        }
+        .drawer-body {
+            flex: 1 0 0;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .drawer-footer {
+            padding: 20px;
+        }
+    }
+}
